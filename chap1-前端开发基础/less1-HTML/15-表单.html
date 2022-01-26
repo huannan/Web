@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>15-表单</title>
+</head>
+<body>
+
+<form action="demo.php" name="form1" method="get">
+    <label for="username">用户名：</label><input id="username" type="text" name="username" maxlength="10"/><br/>
+    <label for="password">密码：</label><input id="password" type="password" name="password"/><br/>
+    性别：<input id="male" type="radio" name="sex" value="male"/><label for="male">男</label><input id="female" type="radio" name="sex" value="female" checked="checked"/><label for="female">女</label><br/>
+    爱好：<input id="hobby_eat" type="checkbox" name="hobby" value="eat"/><label for="hobby_eat">吃饭</label><input id="hobby_sleep" type="checkbox" name="hobby" value="sleep"/><label for="hobby_sleep">睡觉</label><input id="hobby_play" type="checkbox" name="hobby" value="play"/><label for="hobby_play">打游戏</label><br/>
+    <input type="button" value="获取验证码"><br/>
+    <label for="code">验证码：</label><input id="code" type="text" name="code" maxlength="6"/><br/>
+    头像：<input type="file"><br/>
+    籍贯：<select name="from"><option selected="selected" value="guangdong">广东</option><option value="guangxi">广西</option><option value="shandong">山东</option></select><br/>
+    个人介绍：<textarea name="desc" rows="5" cols="20">请输入个人介绍</textarea><br/>
+    <input type="submit" value="提交"/><input type="reset" value="重置"/><br/>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>06-字体属性</title>
+    <style>
+        .font-family {
+            /* 字体系列：可以设置多个 */
+            font-family: 'Microsoft Tahei', 'Monaco', 'sans-serif';
+        }
+
+        .font-size {
+            /* 字体大小：尽量不要使用默认大小 */
+            font-size: 18px;
+        }
+
+        .font-weight {
+            /* 字体大小：400=normal，700=bold */
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .font-style {
+            /* 字体文字样式：normal，italic 平时我们很少给文字加斜体，反而要给斜体标签（em，i）改为不倾斜字体 */
+            font-style: italic;
+        }
+
+        .font {
+            /* 字体复合属性：不需要设置的属性可以省略（取默认值），但必须保留 font-size 和 font-family 属性 */
+            font: normal 700 18px 'Microsoft Tahei', 'Monaco', 'sans-serif';
+        }
+    </style>
+</head>
+<body>
+
+<h2>pink的秘密</h2>
+<p class="font-family">那一抹众人中最漂亮的颜色,</p>
+<p class="font-size">优雅,淡然,又那么心中清澈.</p>
+<p>前端总是伴随着困难和犯错,</p>
+<p class="font-style">静心,坦然,攻克一个又一个.</p>
+<p class="font-weight">拼死也要克服它,</p>
+<p class="font">这是pink的秘密也是老师最终的嘱托.</p>
+
+</body>
+</html>

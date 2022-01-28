@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>15-复合选择器-并集选择器</title>
+    <style>
+        /* 1.未访问的链接 a:link  把没有点击过的(访问过的)链接选出来 */
+        .div1 a:link {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        /*2. a:visited 选择点击过的(访问过的)链接 */
+        .div1 a:visited {
+            color: pink;
+            text-decoration: none;
+        }
+
+        /*3. a:hover 选择鼠标经过的那个链接 */
+        .div1 a:hover {
+            color: blue;
+            text-decoration: none;
+        }
+
+        /* 4. a:active 选择的是我们鼠标正在按下还没有弹起鼠标的那个链接 */
+        .div1 a:active {
+            color: green;
+            text-decoration: none;
+        }
+
+        /* 工作中一般写法 */
+        .div2 a {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .div2 a:hover {
+            color: pink;
+            text-decoration: none;
+        }
+
+        /* 把获得光标的input表单元素选取出来 */
+        input:focus {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div1">
+    <a href="https://www.baidu.com">百度一下</a>
+</div>
+
+<div class="div2">
+    <a href="https://www.qq.com">腾讯新闻</a>
+</div>
+
+<input type="text">
+<input type="text">
+<input type="text">
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>39-盒子模型-内边距-padding不会影响盒子大小的情况</title>
+    <style>
+        /* 块元素默认与父亲盒子一样宽，如果子盒子不指定宽度（注意：不能设置成100%），那么设置padding不会影响宽度（即不会超过父盒子） */
+        h1 {
+            /*width: 100%;*/
+            height: 100px;
+            background-color: pink;
+            padding: 20px;
+        }
+
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+
+        div p {
+            /*width: 100%;*/
+            background-color: blue;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>我是标题</h1>
+
+<div>
+    <p>我是一个段落</p>
+</div>
+
+</body>
+</html>

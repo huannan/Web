@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>37-盒子模型-内边距-新浪导航栏案例</title>
+    <style>
+        .nav {
+            height: 41px;
+            border-top: 3px solid #FF8500;
+            border-bottom: 1px solid #EDEEF0;
+        }
+
+        .nav a {
+            display: inline-block;
+            height: 41px;
+            /* 不设置宽度，自动适应 */
+            padding: 0 15px;
+            line-height: 41px;
+            font-size: 14px;
+            color: #4C4C4C;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #EEEEEE;
+            color: #FF8500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <a href="#">新浪导航</a>
+    <a href="#">手机新浪网</a>
+    <a href="#">移动客户端</a>
+    <a href="#">微博</a>
+    <a href="#">最划算</a>
+</div>
+
+</body>
+</html>

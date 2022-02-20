@@ -3,10 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>44-综合案例-产品模块</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .box {
+            width: 300px;
+            height: 415px;
+            background-color: #fff;
+            margin: 100px auto;
+        }
+
+        .box img {
+            width: 100%;
+        }
+
+        .box p {
+            /*width: 100%;*/
+            /* 固定高度，方便调整下面的盒子 */
+            height: 70px;
+            margin-top: 30px;
+            /* 因为这个段落没有 width属性 所以 padding不会撑开盒子的宽度；一般盒子与盒子用margin，其余用padding，用padding的时候还要注意padding会影响盒子的大小 */
+            padding: 0 28px;
+            font-size: 14px;
+            /*background-color: pink;*/
+        }
+
+        .apprise {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #b0b0b0;
+            padding-left: 28px;
+        }
+
+        .info {
+            margin-top: 15px;
+            padding: 0 28px;
+            font-size: 14px;
+        }
+
+        .info h4 {
+            display: inline-block;
+        }
+
+        .info em {
+            font-style: normal;
+            color: #ebe4e0;
+            margin: 0 6px 0 15px;
+        }
+
+        .info span {
+            color: #ff6700;
+        }
+    </style>
 </head>
 <body>
 
-
+<div class="box">
+    <img src="images/product.jpg" alt="产品图片">
+    <p class="review">快递牛，整体不错蓝牙可以说秒连。红米给力！</p>
+    <div class="apprise">来自于 117384232 的评价</div>
+    <div class="info">
+        <h4>Redmi AirDots真无线蓝...</h4>
+        <em>|</em>
+        <span>99.9元</span>
+    </div>
+</div>
 
 </body>
 </html>

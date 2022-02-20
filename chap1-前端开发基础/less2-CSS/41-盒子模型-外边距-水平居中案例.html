@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>41-盒子模型-外边距-水平居中案例</title>
+    <style>
+        .header {
+            width: 900px;
+            height: 300px;
+            background-color: pink;
+            /* 外边距可以让块级盒子水平居中，但是必须满足两个条件：盒子必须指定了宽度（width）；盒子左右的外边距都设置为 auto */
+            margin: 0 auto;
+            /* 行内元素或者行内块元素水平居中给其父元素添加 text-align:center 即可 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="images/up.jpg"/>
+</div>
+
+</body>
+</html>

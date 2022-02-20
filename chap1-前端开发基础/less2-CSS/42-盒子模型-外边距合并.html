@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>42-盒子模型-外边距合并</title>
+    <style>
+        /*
+            1. 相邻块元素垂直外边距的合并
+            当上下相邻的两个块元素（兄弟关系）相遇时，如果上面的元素有下外边距 margin-bottom，下面的元素有
+            上外边距 margin-top ，则他们之间的垂直间距不是 margin-bottom 与 margin-top 之和。取两个值中的
+            较大者这种现象被称为相邻块元素垂直外边距的合并。
+
+            解决方案：
+            尽量只给一个盒子添加 margin 值。
+        */
+        .top, .bottom {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .top {
+            margin-bottom: 10px;
+        }
+
+        .bottom {
+            margin-top: 50px;
+        }
+
+        /*
+            2. 嵌套块元素垂直外边距的塌陷
+            对于两个嵌套关系（父子关系）的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值。
+
+            解决方案：
+            ① 可以为父元素定义上边框。
+            ② 可以为父元素定义上内边距。
+            ③ 可以为父元素添加 overflow:hidden。
+        */
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .son {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top"></div>
+<div class="bottom"></div>
+
+<hr/>
+
+<div class="father">
+    <div class="son"></div>
+</div>
+
+</body>
+</html>
